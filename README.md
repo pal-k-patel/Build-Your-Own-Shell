@@ -1,3 +1,6 @@
+#Author
+## PAL PATEL 23BIT066
+
 # 🐚 My Custom Shell in C
 
 This is a simple Unix-like shell built in C.  
@@ -38,5 +41,33 @@ To compile:
 gcc -o myshell updated_shell.c
 
 
-To run:
+##To run:
 ./myshell
+
+
+
+##What I Learned
+
+Using fork, execvp, and waitpid for process creation and control
+
+Managing pipes and file descriptors for redirection
+
+Handling signals safely (SIGINT, SIGCHLD)
+
+Working with environment variables and memory in C
+
+Designing a small but working command interpreter
+
+
+##Notes
+
+Only supports one pipe (|) at a time
+
+History and job lists are stored in memory for the current session only
+
+The implementation focuses on clarity and learning, not feature completeness
+
+Good base to extend for multiple pipes, scripting, or alias support
+
+
+
