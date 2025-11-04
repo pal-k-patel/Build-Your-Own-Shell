@@ -35,39 +35,36 @@ You’ll need:
 - A C compiler (like `gcc`)
 - A Unix-like OS (Linux, macOS, or WSL)
 
-To compile:
+To compile
+  gcc -o myshell updated_shell.c
 
-```bash
-gcc -o myshell updated_shell.c
-
-
-##To run:
+To run
 ./myshell
 
 
+## 🧠 What I Learned
 
-##What I Learned
+> **Key takeaways from building this project:**
 
-Using fork, execvp, and waitpid for process creation and control
+- Learned how to use **fork**, **execvp**, and **waitpid** for process creation and control  
+- Understood how **pipes** and **file descriptors** work for input/output redirection  
+- Gained experience handling **signals** safely (`SIGINT`, `SIGCHLD`)  
+- Worked with **environment variables** and memory management in C  
+- Built a small yet functional **command interpreter** from scratch
 
-Managing pipes and file descriptors for redirection
+---
 
-Handling signals safely (SIGINT, SIGCHLD)
+## 📝 Notes
 
-Working with environment variables and memory in C
+> **Important limitations and improvements:**
 
-Designing a small but working command interpreter
+- Supports only **one pipe (`|`)** at a time  
+- Command history and job lists are stored **only for the current session**  
+- The focus is on **clarity and learning**, not feature completeness  
+- A good starting point to extend with **multiple pipes, scripting, or alias support**
 
 
-##Notes
 
-Only supports one pipe (|) at a time
-
-History and job lists are stored in memory for the current session only
-
-The implementation focuses on clarity and learning, not feature completeness
-
-Good base to extend for multiple pipes, scripting, or alias support
 
 
 
